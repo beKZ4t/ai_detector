@@ -10,9 +10,6 @@
             </div>
         </div>
         <div class="end_text">© 2023-2024</div>
-    
-
-
     </div>
 </template>
 

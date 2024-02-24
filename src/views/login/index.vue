@@ -8,15 +8,15 @@
         <div class="email">E-mail <div class="red">*</div></div>
         <div class="input-container">
           <img class="input-icon" src="@/assets/images/email.png">
-          <input type="email" placeholder="E-mail">
+          <input type="email" placeholder="E-mail" v-model="email">
         </div>
         <div class="password">Password <div class="red">*</div> </div>
         <div class="input-container">
           <img class="input-icon" src="@/assets/images/password.png">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" v-model="password">
         </div>
         <div class="forgot">Forgot password?</div>
-        <button type="button" @click="this.$router.push('/homeuser')">Login</button>
+        <button type="button" @click="login">Login</button>
         <div class="create">Don't have an account yet? <div class="red_create" @click="this.$router.push('/register')">Create Account</div></div>
         <div class="end_text">© 2023-2024</div>
       </div> 
@@ -27,8 +27,21 @@
 <script>
 
 
+import api from "@/service/api.js";
+
 export default {
   name: "index",
+  data() {
+    return {
+      email: "",
+      password: ""
+    }
+  },
+  methods: {
+    login() {
+      this.$router.push("/homeuser");
+    }
+  }
 }
 </script>
 
