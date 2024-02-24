@@ -6,9 +6,15 @@
         <div class="first">Authorization</div>
         <div class="second">Enter your email and password</div>
         <div class="email">E-mail <div class="red">*</div></div>
-        <input class="email_input" type="email" placeholder="E-mail">
+        <div class="input-container">
+          <img class="input-icon" src="@/assets/images/email.png">
+          <input type="email" placeholder="E-mail">
+        </div>
         <div class="password">Password <div class="red">*</div> </div>
-        <input class="password_input" type="password" placeholder="Password">
+        <div class="input-container">
+          <img class="input-icon" src="@/assets/images/password.png">
+          <input type="password" placeholder="Password">
+        </div>
         <div class="forgot">Forgot password?</div>
         <button type="button" @click="this.$router.push('/homeuser')">Login</button>
         <div class="create">Don't have an account yet? <div class="red_create" @click="this.$router.push('/register')">Create Account</div></div>
@@ -120,27 +126,46 @@ h1{
     
   }
 
-  .password_input{
-    height: 60px;
-    width: 397px;
+  .input-container {
+    padding: 9px 19px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    border: 1px solid #00000030;
-    background: url(../../assets/images/password.png) no-repeat;
-    background-size: auto 40%;
+    margin-bottom: 14px;
+  }
+
+  .input-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+  }
+
+  input {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    border: none;
+    outline: none;
     font-size: 16px;
     font-family: Brains-regular, system-ui;
- 
+    color: black;
   }
-  /* .password_input::placeholder {
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
 
-
-  } */
   .email_input{
     height: 60px;
     width: 397px;
     border-radius: 10px;
     margin-bottom: 17px;
-    background: url(../../assets/images/email.png) no-repeat;
     background-size: auto 30%;
     border: 1px solid #00000030;
     font-size: 16px;
