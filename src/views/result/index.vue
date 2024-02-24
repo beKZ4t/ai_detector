@@ -41,10 +41,11 @@
       </div>
       <div class="under">
         <div class="left">
-          <button type="button"><img height="15px" src="@/assets/images/left.png">Back</button>
+          <button type="button"><img class="img_right" height="15px" src="@/assets/images/left.png">Back</button>
         </div>
         <div class="right">
           <span class="under_red"> PRO </span> Download without plagiarism
+          <img class="last_icon" src="@/assets/images/password.png">
         </div>
       </div>
 
@@ -73,9 +74,12 @@ export default {
   font-family: Brains-bold, system-ui;
   color: #00000050;
 
+
+
 }
 .under_red{
   color: #E52D27;
+
 }
 button{
   width: 170px;
@@ -90,8 +94,9 @@ button{
   align-items: center;
   justify-content: center;
 }
-.button img{
+.img_right {
   margin-right: 10px;
+  margin-top: 5px;
 }
 .under{
   display: flex;
@@ -104,6 +109,11 @@ button{
 .under_percent{
   margin: 0 auto;
 }
+.last_icon{
+  height: 21.45px;
+  margin-left: px;
+}
+
 .first_procent{
   height: 239px;
   width: 208px;
