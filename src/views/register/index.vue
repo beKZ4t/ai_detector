@@ -6,11 +6,27 @@
           <div class="first">Registration</div>
           <div class="second">Fill in all fields to register</div>
           <div class="user_name">Username <div class="red">*</div></div>
-          <input class="user_input" type="text" placeholder="Username">
+          <div class="input-container">
+            <img class="input-icon" src="@/assets/images/password.png">
+            <input type="text" placeholder="Username">
+          </div>
+
+
+
           <div class="email">E-mail <div class="red">*</div></div>
-          <input class="email_input" type="email" placeholder="E-mail">
+
+          <div class="input-container">
+            <img class="input-icon" src="@/assets/images/email.png">
+            <input type="email" placeholder="E-mail">
+          </div>
+
+
           <div class="password">Password <div class="red">*</div> </div>
-          <input class="password_input" type="password" placeholder="Password">
+
+          <div class="input-container">
+            <img class="input-icon" src="@/assets/images/password.png">
+            <input type="password" placeholder="Password">
+          </div>
           <button type="button" @click="this.$router.push('/homeuser')">Login</button>
           <div class="create">Already have an account? <div @click="this.$router.push('/login')" class="red_create">Login</div></div>
           <div class="end_text">© 2023-2024</div>
@@ -129,7 +145,40 @@
       display: flex;
       
     }
-  
+  .input-container {
+    padding: 9px 19px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 14px;
+  }
+
+  .input-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+  }
+
+  input {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Brains-regular, system-ui;
+    color: black;
+  }
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
     .password_input{
       height: 60px;
       width: 397px;
@@ -139,11 +188,11 @@
       background-size: auto 40%;
       font-size: 16px;
       font-family: Brains-regular, system-ui;
-   
+
     }
     /* .password_input::placeholder {
-  
-  
+
+
     } */
     .email_input{
       height: 60px;
