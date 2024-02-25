@@ -56,9 +56,7 @@
     font-family: Brains-bold, system-ui;
 
   }
-  .right_side p:hover{
-    color: #E52D27;
-  }
+
   /* .left_side{
     color: #E52D27;
     font-size: 22px;;
@@ -66,10 +64,7 @@
     cursor: pointer;
     
   } */
-  .right_side:hover{
-    background-color: white;
-    
-  }
+
   .navbar{
     display:flex;
     justify-content:space-between;

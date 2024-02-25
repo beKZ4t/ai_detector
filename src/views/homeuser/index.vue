@@ -36,6 +36,9 @@
     components: {
       UnderNavbarComponent,SoloTextComponent, DiscoverComponent, DeepanalysisComponent, DuoTextComponent, ContainerComponent , NavbarUserComponent
     },
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 
   }
   </script>

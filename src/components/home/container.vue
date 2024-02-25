@@ -28,10 +28,6 @@
 
   <script>
 
-  
-  
-
-
   export default {
     name: "ContainerComponent",
   
@@ -58,7 +54,14 @@
     box-shadow: 1px #00000050 ;
     font-size: 22px;
     font-family: Brains-regular, system-ui;
+    transition: 0.8s;
   }
+  .item:hover{
+    color: #FFFFFF;
+    background-color: #E52D27;
+    border: none;
+  }
+
   .item p{
     margin-top: 34px;
     margin-left: 26.78px;
@@ -67,6 +70,7 @@
     display: flex;
     align-items: center;
   }
+
   .end_text{
     margin-top: 83px;
     margin-bottom: 39px;

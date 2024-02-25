@@ -14,7 +14,11 @@
       export default {
         name: "index",
         components: {NavbarUserComponent},
+      mounted() {
+        window.scrollTo(0, 0);
       }
+      }
+
       </script>
       
       <style scoped>

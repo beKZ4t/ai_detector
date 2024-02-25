@@ -25,6 +25,7 @@
                                                empty-color='FFFFFF'
                                                fill-color="rgba(229,45,39,0.6)"
                                                size="200"
+
         />
         <div style="font-size: 22px" class="under_percent">AI</div>
         </div>
@@ -33,6 +34,7 @@
                                              empty-color='FFFFFF'
                                              fill-color="rgba(229,45,39,0.6)"
                                              size="150"
+
         />
           <div style="font-size: 22px">Human</div>
         </div>
@@ -46,6 +48,7 @@
         <div class="right">
           <span class="under_red"> PRO </span> <span class="second_span"> Download without plagiarism
           <img class="last_icon" src="@/assets/images/password.png"></span>
+
         </div>
       </div>
 
@@ -62,8 +65,11 @@ export default {
     name: "index",
     components: {
         NavbardetecComponent, CircleProgress
-    
-    }
+
+    },
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 }
 </script>
 

@@ -41,8 +41,12 @@ export default {
     name: "index",
     components: {
         NavbardetecComponent
-    
-    }
+
+
+},
+mounted() {
+  window.scrollTo(0, 0);
+}
 }
 </script>
 

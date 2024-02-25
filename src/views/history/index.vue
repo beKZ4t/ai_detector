@@ -170,7 +170,11 @@ export default {
   components: {
     NavbardetecComponent, CircleProgress
 
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
+
 }
 </script>
 

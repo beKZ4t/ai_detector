@@ -41,7 +41,10 @@ export default {
     login() {
       this.$router.push("/homeuser");
     }
-  }
+},
+mounted() {
+  window.scrollTo(0, 0);
+}
 }
 </script>
 
