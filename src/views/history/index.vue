@@ -24,30 +24,48 @@
       </div>
       <div class="table">
         <div class="first_table">
-          <div class="table_item"></div>
-          <div class="table_item">24.02.2024, 19:37</div>
-          <div class="table_item"> <circle-progress :percent="75"
-                                                    empty-color='FFFFFF'
-                                                    fill-color="rgba(229,45,39,0.6)"
-                                                    size="75"
-          /></div>
-          <div class="table_item"> <circle-progress :percent="75"
-                                                    empty-color='FFFFFF'
-                                                    fill-color="rgba(229,45,39,0.6)"
-                                                    size="75"
-          /></div>
-          <div class="table_item"> <circle-progress :percent="75"
-                                                    empty-color='FFFFFF'
-                                                    fill-color="rgba(229,45,39,0.6)"
-                                                    size="75"
-          /></div>
+          <div class="table_item_first">1</div>
+          <div class="right_side">
+          <div class="table_item_date">24.02.2024, 19:37</div>
+          <div class="table_item">
+            <div class="table_precent_first">
+              <circle-progress :percent="75"
+                               empty-color='FFFFFF'
+                               fill-color="rgba(229,45,39,0.6)"
+                               size="50"
+                               border-width="5"
+
+            />
+            </div>
+            <div class="table_precent_second">
+              <circle-progress :percent="75"
+                               empty-color='FFFFFF'
+                               fill-color="rgba(229,45,39,0.6)"
+                               size="50"
+                               border-width="5"
+
+            />
+            </div>
+          </div>
+          <div class="table_item_third">
+            <div class="table_precent"><circle-progress :percent="75"
+                                                        empty-color='FFFFFF'
+                                                        fill-color="rgba(229,45,39,0.6)"
+                                                        size="50"
+                                                        border-width="5"
+
+            />
+            </div></div>
           <div class="table_item">Download</div>
-          <div class="table_item">Open</div>
+          <div class="table_item_end">Open</div>
+          </div>
         </div>
       </div>
+
     </div>
     <div class="end_text">© 2023-2024</div>
   </div>
+
 
 
 
@@ -57,23 +75,67 @@
 
 <script>
 import NavbardetecComponent from "@/components/detector/navbardetec.vue";
+import "vue3-circle-progress/dist/circle-progress.css";
+import CircleProgress from "vue3-circle-progress";
 
 export default {
   name: "index",
   components: {
-    NavbardetecComponent
+    NavbardetecComponent, CircleProgress
 
   }
 }
 </script>
 
 <style scoped>
+.right_side{
+  height: 61px;
+}
+.table_item_date{
+  width: 235px;
+  height: 32px;
+  font-size: 22px;
+  font-family: Brains-bold, system-ui;
+  margin-right: 105px  ;
+}
+.table_item_end{
+  margin-left: 53px;
+}
+.right_side{
+  display: flex;
+
+  align-items: center;
+  width: 952px;
+}
+.table_item_third{
+  margin-right: 58px;
+}
+.table_precent_second{
+  margin-left: 74px;
+  margin-right: 56px;
+}
+.table_item_first{
+  width: 50px;
+  height: 50px;
+  background-color: #E52D27;
+  color: #FFFFFF;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 29px;
+}
+.table_precent{
+  width: 64px;
+  height: 60px;
+}
 .first_table{
   display: flex;
   width: 1067px;
   height: 61px;
   align-items: center;
 }
+
 .header{
   display: flex;
   width: 813px;
