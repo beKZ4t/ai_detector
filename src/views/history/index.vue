@@ -28,6 +28,7 @@
           <div class="right_side">
           <div class="table_item_date">24.02.2024, 19:37</div>
           <div class="table_item">
+
             <div class="table_precent_first">
               <circle-progress :percent="75"
                                empty-color='FFFFFF'
@@ -37,16 +38,18 @@
 
             />
             </div>
-            <div class="table_precent_second">
-              <circle-progress :percent="75"
-                               empty-color='FFFFFF'
-                               fill-color="rgba(229,45,39,0.6)"
-                               size="50"
-                               border-width="5"
-
-            />
-            </div>
           </div>
+            <div class="item">
+              <div class="table_precent_second">
+                <circle-progress :percent="75"
+                                 empty-color='FFFFFF'
+                                 fill-color="rgba(229,45,39,0.6)"
+                                 size="50"
+                                 border-width="5"
+
+                />
+              </div>
+            </div>
           <div class="table_item_third">
             <div class="table_precent"><circle-progress :percent="75"
                                                         empty-color='FFFFFF'
@@ -56,8 +59,93 @@
 
             />
             </div></div>
-          <div class="table_item">Download</div>
-          <div class="table_item_end">Open</div>
+          <div class="table_item_dow">Download</div>
+
+          <div class="table_item_end">Open <span><img style="margin-left: 5px" width="18px" src="@/assets/images/red_left.png"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="first_table">
+          <div class="table_item_first">2</div>
+          <div class="right_side">
+            <div class="table_item_date">24.02.2024, 19:37</div>
+            <div class="table_item">
+
+              <div class="table_precent_first">
+                <circle-progress :percent="75"
+                                 empty-color='FFFFFF'
+                                 fill-color="rgba(229,45,39,0.6)"
+                                 size="50"
+                                 border-width="5"
+
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="table_precent_second">
+                <circle-progress :percent="75"
+                                 empty-color='FFFFFF'
+                                 fill-color="rgba(229,45,39,0.6)"
+                                 size="50"
+                                 border-width="5"
+
+                />
+              </div>
+            </div>
+            <div class="table_item_third">
+              <div class="table_precent"><circle-progress :percent="75"
+                                                          empty-color='FFFFFF'
+                                                          fill-color="rgba(229,45,39,0.6)"
+                                                          size="50"
+                                                          border-width="5"
+
+              />
+              </div></div>
+            <div class="table_item_dow">Download</div>
+            <div class="table_item_end">Open<span><img style="margin-left: 5px" width="18px" src="@/assets/images/red_left.png"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="first_table">
+          <div class="table_item_first">3</div>
+          <div class="right_side">
+            <div class="table_item_date">24.02.2024, 19:37</div>
+            <div class="table_item">
+
+              <div class="table_precent_first">
+                <circle-progress :percent="75"
+                                 empty-color='FFFFFF'
+                                 fill-color="rgba(229,45,39,0.6)"
+                                 size="50"
+                                 border-width="5"
+
+                />
+              </div>
+            </div>
+            <div class="item">
+              <div class="table_precent_second">
+                <circle-progress :percent="75"
+                                 empty-color='FFFFFF'
+                                 fill-color="rgba(229,45,39,0.6)"
+                                 size="50"
+                                 border-width="5"
+
+                />
+              </div>
+            </div>
+            <div class="table_item_third">
+              <div class="table_precent"><circle-progress :percent="75"
+                                                          empty-color='FFFFFF'
+                                                          fill-color="rgba(229,45,39,0.6)"
+                                                          size="50"
+                                                          border-width="5"
+
+              />
+              </div></div>
+            <div class="table_item_dow">Download</div>
+            <div class="table_item_end">Open<span><img style="margin-left: 5px" width="18px" src="@/assets/images/red_left.png"></span></div>
           </div>
         </div>
       </div>
@@ -91,6 +179,25 @@ export default {
 .right_side{
   height: 61px;
 }
+.table_item_dow{
+  font-size: 22px;
+  color: #E52D27;
+  font-family: Brains-regular, system-ui;
+  border: none;
+  border-bottom: 1px solid #E52D27;
+}
+.table_precent{
+  margin-top: 7px;
+  margin-right: 6px;
+}
+.table_item_end{
+  font-size: 22px;
+  color: #E52D27;
+  font-family: Brains-bold, system-ui;
+  display: flex;
+}
+
+
 .table_item_date{
   width: 235px;
   height: 32px;
@@ -111,7 +218,7 @@ export default {
   margin-right: 58px;
 }
 .table_precent_second{
-  margin-left: 74px;
+  margin-left: 97px;
   margin-right: 56px;
 }
 .table_item_first{
@@ -124,6 +231,8 @@ export default {
   display: flex;
   justify-content: center;
   margin-right: 29px;
+  font-size: 22px;
+  font-family: Brains-bold, system-ui;
 }
 .table_precent{
   width: 64px;
