@@ -5,9 +5,12 @@
             <div @click="this.$router.push('/homeuser')"><img class="logo_img" src="@/assets/images/logo.png"> </div>
             <div class="right">
                 <div class="items">
-                    <div class="item"> History</div>
-                    <div class="item" @click="this.$router.push('/detector')">  Detector</div>
-                    <div class="item">Profile</div>
+                  <div class="item" @click="this.$router.push('/history')" :style="{ borderBottom: $route.path === '/history' ? '2px solid #E52D27' : '' }"> History</div>
+
+                  <div class="item" @click="this.$router.push('/detector')" :style="{ borderBottom: $route.path === '/detector' ? '2px solid #E52D27' : '' }"> Detector</div>
+
+                  <div class="item" @click="this.$router.push('/profile')" :style="{ borderBottom: $route.path === '/profile' ? '2px solid #E52D27' : '' }">Profile</div>
+
                     <button type="button">Get PRO</button>
 
                 </div>

@@ -41,11 +41,11 @@
       </div>
       <div class="under">
         <div class="left">
-          <button type="button"><img class="img_right" height="15px" src="@/assets/images/left.png">Back</button>
+          <button type="button" @click="this.$router.go(-1)"><img class="img_right" height="15px" src="@/assets/images/left.png">Back</button>
         </div>
         <div class="right">
-          <span class="under_red"> PRO </span> Download without plagiarism
-          <img class="last_icon" src="@/assets/images/password.png">
+          <span class="under_red"> PRO </span> <span class="second_span"> Download without plagiarism
+          <img class="last_icon" src="@/assets/images/password.png"></span>
         </div>
       </div>
 
@@ -76,7 +76,12 @@ export default {
 
 
 
+
 }
+.second_span{
+  border-bottom: 2px solid #00000050;
+}
+
 .under_red{
   color: #E52D27;
 
@@ -93,10 +98,10 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .img_right {
   margin-right: 10px;
-  margin-top: 5px;
 }
 .under{
   display: flex;

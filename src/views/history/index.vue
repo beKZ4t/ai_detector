@@ -56,7 +56,6 @@
                                                         fill-color="rgba(229,45,39,0.6)"
                                                         size="50"
                                                         border-width="5"
-
             />
             </div></div>
           <div class="table_item_dow">Download</div>
@@ -279,7 +278,7 @@ export default {
   font-size: 18px;
   font-family: Brains-regular, system-ui;
   color: #1E1E1E;
-  margin-top: 92px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
 }

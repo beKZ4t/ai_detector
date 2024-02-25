@@ -1,13 +1,16 @@
 <template>
 
-        
+
         <div class="navbar_user">
             <div @click="this.$router.push('/homeuser')"><img class="logo_img" src="@/assets/images/logo.png"> </div>
             <div class="right">
                 <div class="items">
-                    <div class="item"><a> History</a></div>
-                    <div class="item"><a style="color:#E52D27; ;" href="#"> Detector</a></div>
-                    <div class="item"><a>Profile</a></div>
+                  <div class="item" @click="this.$router.push('/history')" :style="{ borderBottom: $route.path === '/history' ? '2px solid #E52D27' : '' }"> History</div>
+
+                  <div class="item" @click="this.$router.push('/detector')" :style="{ borderBottom: $route.path === '/detector' ? '2px solid #E52D27' : '' }"> Detector</div>
+
+                  <div class="item" @click="this.$router.push('/profile')" :style="{ borderBottom: $route.path === '/profile' ? '2px solid #E52D27' : '' }">Profile</div>
+
                     <button type="button">Get PRO</button>
 
                 </div>
@@ -52,7 +55,7 @@ button{
     width: 1074px;
     margin-right: auto;
     margin-left: auto;
-    
+
 }
 .logo_img{
     height:80px;

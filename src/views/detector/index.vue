@@ -111,6 +111,9 @@ textarea{
     font-size: 22px;
     font-family: Brains-regular, system-ui;
 }
+textarea:focus{
+  outline: 1px solid #00000060 ;
+}
 ::-webkit-input-placeholder { 
       padding-top: 26px; 
       padding-left: 34px;
