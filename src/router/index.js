@@ -6,6 +6,7 @@ import Detector from "@/views/detector/index.vue";
 import Register from "@/views/register/index.vue";
 import Homeuser from "@/views/homeuser/index.vue";
 import Result from "@/views/result/index.vue"
+import History from "@/views/history/index.vue";
 
 
 
@@ -46,6 +47,11 @@ const routes = [
         name: '/result',
         component: Result
 },
+    {
+        path: '/history',
+        name: '/history',
+        component: History
+    },
 
 
 ]
