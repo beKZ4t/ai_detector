@@ -185,6 +185,7 @@ export default {
   font-family: Brains-regular, system-ui;
   border: none;
   border-bottom: 1px solid #E52D27;
+  cursor: pointer;
 }
 .table_precent{
   margin-top: 7px;
@@ -195,6 +196,7 @@ export default {
   color: #E52D27;
   font-family: Brains-bold, system-ui;
   display: flex;
+  cursor: pointer;
 }
 
 
@@ -207,10 +209,10 @@ export default {
 }
 .table_item_end{
   margin-left: 53px;
+  cursor: pointer;
 }
 .right_side{
   display: flex;
-
   align-items: center;
   width: 952px;
 }
