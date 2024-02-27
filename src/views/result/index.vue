@@ -37,7 +37,7 @@
 
         />
           <div style="font-size: 22px">Human</div>
-        </div>
+        </div>  
 
 
       </div>
@@ -132,12 +132,19 @@ button{
 }
 .text_procent_second{
   color: #E52D27;
+  position: absolute;
+  margin-bottom: 20px;
 }
 .text_procent_third{
   color: #E52D27;
+
+  position: absolute;
+  margin-bottom: 20px;
 }
 .text_procent_first{
   color: #E52D27;
+  position: absolute;
+  margin-bottom: 50px;
 }
 
 
@@ -169,7 +176,6 @@ button{
   height: 256px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #000000;
   margin: 0 auto;
   margin-top: 82px;
 
