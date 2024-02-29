@@ -10,146 +10,42 @@
       </div>
 
     </div>
-    <div class="results_list">
-      <div class="header">
-        <div class="first_header">
-          <div class="items">Time</div>
-        </div>
-        <div class="second_header">
-          <div class="items">Plagiarism</div>
-          <div class="items">AI</div>
-          <div class="items">Human</div>
-          <div class="items">Content</div>
-        </div>
-      </div>
-      <div class="table">
-        <div class="first_table">
-          <div class="table_item_first">1</div>
-          <div class="right_side">
-          <div class="table_item_date">24.02.2024, 19:37</div>
-          <div class="table_item">
-
-            <div class="table_precent_first">
-              <circle-progress :percent="75"
-                               empty-color='FFFFFF'
-                               fill-color="rgba(229,45,39,0.6)"
-                               size="50"
-                               border-width="5"
-
-            />
-            </div>
-          </div>
-            <div class="item">
-              <div class="table_precent_second">
-                <circle-progress :percent="75"
-                                 empty-color='FFFFFF'
-                                 fill-color="rgba(229,45,39,0.6)"
-                                 size="50"
-                                 border-width="5"
-
-                />
-              </div>
-            </div>
-          <div class="table_item_third">
-            <div class="table_precent"><circle-progress :percent="75"
-                                                        empty-color='FFFFFF'
-                                                        fill-color="rgba(229,45,39,0.6)"
-                                                        size="50"
-                                                        border-width="5"
-            />
-            </div></div>
-          <div class="table_item_dow">Download</div>
-
-          <div class="table_item_end">Open <span><img style="margin-left: 5px" width="18px" src="@/assets/images/red_left.png"></span></div>
-          </div>
-        </div>
-      </div>
-      <div class="table">
-        <div class="first_table">
-          <div class="table_item_first">2</div>
-          <div class="right_side">
-            <div class="table_item_date">24.02.2024, 19:37</div>
-            <div class="table_item">
-
-              <div class="table_precent_first">
-                <circle-progress :percent="75"
-                                 empty-color='FFFFFF'
-                                 fill-color="rgba(229,45,39,0.6)"
-                                 size="50"
-                                 border-width="5"
-
-                />
-              </div>
-            </div>
-            <div class="item">
-              <div class="table_precent_second">
-                <circle-progress :percent="75"
-                                 empty-color='FFFFFF'
-                                 fill-color="rgba(229,45,39,0.6)"
-                                 size="50"
-                                 border-width="5"
-
-                />
-              </div>
-            </div>
-            <div class="table_item_third">
-              <div class="table_precent"><circle-progress :percent="75"
-                                                          empty-color='FFFFFF'
-                                                          fill-color="rgba(229,45,39,0.6)"
-                                                          size="50"
-                                                          border-width="5"
-
-              />
-              </div></div>
-            <div class="table_item_dow">Download</div>
-            <div class="table_item_end">Open<span><img style="margin-left: 5px" width="18px" src="@/assets/images/red_left.png"></span></div>
-          </div>
-        </div>
-      </div>
-      <div class="table">
-        <div class="first_table">
-          <div class="table_item_first">3</div>
-          <div class="right_side">
-            <div class="table_item_date">24.02.2024, 19:37</div>
-            <div class="table_item">
-
-              <div class="table_precent_first">
-                <circle-progress :percent="75"
-                                 empty-color='FFFFFF'
-                                 fill-color="rgba(229,45,39,0.6)"
-                                 size="50"
-                                 border-width="5"
-
-                />
-              </div>
-            </div>
-            <div class="item">
-              <div class="table_precent_second">
-                <circle-progress :percent="75"
-                                 empty-color='FFFFFF'
-                                 fill-color="rgba(229,45,39,0.6)"
-                                 size="50"
-                                 border-width="5"
-
-                />
-              </div>
-            </div>
-            <div class="table_item_third">
-              <div class="table_precent"><circle-progress :percent="75"
-                                                          empty-color='FFFFFF'
-                                                          fill-color="rgba(229,45,39,0.6)"
-                                                          size="50"
-                                                          border-width="5"
-
-              />
-              </div></div>
-            <div class="table_item_dow">Download</div>
-            <div class="table_item_end">Open<span><img style="margin-left: 5px" width="18px" src="@/assets/images/red_left.png"></span></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <table>
+      <tr>
+        <th></th>
+        <th style="text-align: start">Time</th>
+        <th>Plagiarism</th>
+        <th>AI</th>
+        <th>Human</th>
+        <th>Content</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><div class="number-container"><p>1</p></div></td>
+        <td><p class="date-text" style="text-align: start">24.02.2024, 19:37</p></td>
+        <td><percent-component :percent="100"/></td>
+        <td><percent-component :percent="75"/></td>
+        <td><percent-component :percent="75"/></td>
+        <td><p class="download-button">Download</p></td>
+        <td><div class="open-button"><p>Open</p><img src="@/assets/images/red_left.png"></div></td>
+      </tr><tr>
+        <td><div class="number-container"><p>2</p></div></td>
+        <td><p class="date-text" style="text-align: start">24.02.2024, 19:37</p></td>
+        <td><percent-component :percent="75"/></td>
+        <td><percent-component :percent="50"/></td>
+        <td><percent-component :percent="75"/></td>
+        <td><p class="download-button">Download</p></td>
+        <td><div class="open-button"><p>Open</p><img src="@/assets/images/red_left.png"></div></td>
+      </tr><tr>
+        <td><div class="number-container"><p>3</p></div></td>
+        <td><p class="date-text" style="text-align: start">24.02.2024, 19:37</p></td>
+        <td><percent-component :percent="10"/></td>
+        <td><percent-component :percent="75"/></td>
+        <td><percent-component :percent="39"/></td>
+        <td><p class="download-button">Download</p></td>
+        <td><div class="open-button"><p>Open</p><img src="@/assets/images/red_left.png"></div></td>
+      </tr>
+    </table>
     <div class="end_text">© 2023-2024</div>
   </div>
 
@@ -164,10 +60,12 @@
 import NavbardetecComponent from "@/components/detector/navbardetec.vue";
 import "vue3-circle-progress/dist/circle-progress.css";
 import CircleProgress from "vue3-circle-progress";
+import PercentComponent from "@/components/history/percent_circle.vue";
 
 export default {
   name: "index",
   components: {
+    PercentComponent,
     NavbardetecComponent, CircleProgress
 
   },
@@ -179,100 +77,19 @@ export default {
 </script>
 
 <style scoped>
-.right_side{
-  height: 61px;
-}
-.table_item_dow{
-  font-size: 22px;
-  color: #E52D27;
-  font-family: Brains-regular, system-ui;
-  border: none;
-  border-bottom: 1px solid #E52D27;
-  cursor: pointer;
-}
-.table_precent{
-  margin-top: 7px;
-  margin-right: 6px;
-}
-.table_item_end{
-  font-size: 22px;
-  color: #E52D27;
-  font-family: Brains-bold, system-ui;
-  display: flex;
-  cursor: pointer;
-}
-
-
-.table_item_date{
-  width: 235px;
-  height: 32px;
-  font-size: 22px;
-  font-family: Brains-bold, system-ui;
-  margin-right: 105px  ;
-}
-.table_item_end{
-  margin-left: 53px;
-  cursor: pointer;
-}
-.right_side{
-  display: flex;
-  align-items: center;
-  width: 952px;
-}
-.table_item_third{
-  margin-right: 58px;
-}
-.table_precent_second{
-  margin-left: 97px;
-  margin-right: 56px;
-}
-.table_item_first{
-  width: 50px;
-  height: 50px;
-  background-color: #E52D27;
-  color: #FFFFFF;
-  border-radius: 10px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-right: 29px;
-  font-size: 22px;
-  font-family: Brains-bold, system-ui;
-}
-.table_precent{
-  width: 64px;
-  height: 60px;
-}
-.first_table{
-  display: flex;
-  width: 1067px;
-  height: 61px;
-  align-items: center;
-}
-
-.header{
-  display: flex;
-  width: 813px;
-  height: 32px;
-  font-size: 22px;
-  justify-content: space-between;
-  margin-top: 46px;
-  margin-left: 79px;
-  font-family: Brains-bold, system-ui;
-  margin-bottom: 24px;
-}
-.second_header{
-  display: flex;
-  width: 512px;
-  justify-content: space-between;
-}
 .main{
   width: 1074px;
   margin-right: auto;
   margin-left: auto;
 
 }
-
+.download-button {
+  font-size: 22px;
+  font-family: Brains-regular, system-ui;
+  color: #E52D27;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .main_page{
   display: flex;
   margin-top: 89px;
@@ -289,7 +106,6 @@ export default {
 .red{
   color: #E52D27;
   font-family: Brains-bold, system-ui;
-
 }
 
 .first{
@@ -307,6 +123,53 @@ export default {
   margin-top: 29px;
   color: #00000070;
 }
-
-
+.number-container {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  background: #E52D27;
+  color: white;
+  font-size: 18px;
+  margin-right: 13px;
+  font-family: Brains-bold, system-ui;
+  border-radius: 8px;
+}
+table {
+  margin-top: 50px;
+  width: 100%;
+}
+th {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  font-family: Brains-bold, system-ui;
+}
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.date-text {
+  color: black;
+  font-size: 22px;
+  font-family: Brains-regular, system-ui;
+}
+.open-button {
+  cursor: pointer;
+}
+.open-button>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+.open-button>p {
+  font-size: 22px;
+  color: #E52D27;
+  font-family: Brains-bold, system-ui;
+}
+.open-button>img {
+  height: 20px;
+  margin-left: 10px;
+}
 </style>
