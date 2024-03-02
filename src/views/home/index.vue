@@ -44,13 +44,29 @@
   </script>
   
   <style scoped>
-  
-  .main{
-    width:1096px;
-    margin-right: auto;
-    margin-left: auto;
-    
+  @media screen and (min-width: 1440px) {
+    .main {
+      margin: 0 auto;
+      width: 1468px;
+    }
   }
+
+  @media screen and (max-width: 1440px) and (min-width: 821px) {
+    .main {
+      margin: 0 auto;
+      width: 1096px;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .main {
+      margin: 0 auto;
+      width: 626px;
+    }
+  }
+
+
+
  
   
  

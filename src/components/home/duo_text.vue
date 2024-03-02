@@ -28,22 +28,60 @@
 
   }
   </script>
+
   
   <style scoped>
+  @media screen and (min-width: 1440px) {
+    .first_text{
+      font-size: 45px;
+    }
+    .second_text{
+      font-size: 20px;
+
+    }
+    .duo_text{
+      margin-top: 166px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 821px) {
+    .first_text{
+      font-size: 40px;
+    }
+    .second_text{
+      font-size: 16px;
+
+    }
+    .duo_text{
+      margin-top: 166px;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .first_text{
+      font-size: 18px;
+    }
+    .second_text{
+      font-size: 10px;
+
+    }
+    .duo_text{
+      margin-top: 25px;
+    }
+
+  }
+
   .duo_text{
     display: flex;
     justify-content: space-between;
-    width: 1068px;
     height: 53px;
     align-items: center;
-    margin-top: 166px;
   }
   .first_text{
-    font-size: 40px;
+
     font-family: Brains-bold, system-ui;
   }
   .second_text{
-    font-size: 16px;
+
     font-family: Brains-bold, system-ui;
   }
 

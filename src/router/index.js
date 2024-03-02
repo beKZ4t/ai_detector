@@ -10,6 +10,7 @@ import History from "@/views/history/index.vue";
 
 
 
+
 const routes = [
     {
         path: '/',
@@ -52,6 +53,7 @@ const routes = [
         name: '/history',
         component: History
     },
+
 
 
 ]

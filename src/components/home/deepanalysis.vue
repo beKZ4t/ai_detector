@@ -37,47 +37,101 @@
   </script>
   
   <style scoped>
+  @media screen and (min-width: 1440px) {
+    .left {
+      width: 457px;
+      border-radius: 19px;
+      font-size: 28px;
+    }
+    .second{
+      font-size: 25px;
+      height: 150px;
+      width: 361px;
+      margin-left: 37px;
+
+    }
+    .first{
+      margin-top: 28px;
+      margin-left: 35px;
+      margin-bottom: 25px;
+    }
+    .deep-analysis{
+      height: 285px;
+      margin-top: 90px;
+    }
+
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 821px) {
+    .left{
+      width: 335px;
+      border-radius: 18px;
+      font-size: 22px;
+
+    }
+    .first{
+      margin-top: 21px;
+      margin-left: 29px;
+      margin-bottom: 26px;
+    }
+    .second{
+      font-size: 20px;
+      height: 105px;
+      width: 275px;
+      margin-left: 29px;
+
+    }
+    .deep-analysis{
+      height: 226px;
+      margin-top: 91px;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .left{
+      width: 195px;
+      border-radius: 11px;
+      font-size: 13px;
+
+    }
+    .second{
+      font-size: 12px;
+      width: 158px;
+      margin-left: 16px;
+    }
+    .first{
+      margin-top: 14px;
+      margin-left: 19px;
+      margin-bottom: 7px;
+    }
+    .deep-analysis{
+
+      height: 135px;
+      margin-top: 50px;
+    }
+  }
+
   
   .main{
-    width:1096px;
+
     margin-right: auto;
     margin-left: auto;
     
   }
-  .first{
-    margin-top: 21px;
-    margin-left: 29px;
-    margin-bottom: 26px;
-
-  }
-
 
 
 
   .second{
     font-family: Brains-regular, system-ui;
-    font-size: 20px;
-    height: 105px;
-    width: 275px;
-    margin-left: 29px;
     transition: 0.8s;
   }
 
-
-
   .deep-analysis{
     display: flex;
-    height: 226px;
-    width: 1066px;
     justify-content: space-between;
-    margin-top: 91px;
   }
   .left{
-    width: 335px;
     background-color: #EFEFEF;
-    border-radius: 18px;
     font-family: Brains-bold, system-ui;
-    font-size: 22px;
     transition: 0.8s;
 
   }
