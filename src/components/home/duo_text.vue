@@ -31,59 +31,49 @@
 
   
   <style scoped>
-  @media screen and (min-width: 1440px) {
-    .first_text{
-      font-size: 45px;
-    }
-    .second_text{
-      font-size: 20px;
+.duo_text{
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 166px;
+}
+.first_text{
+  font-size: 40px;
+  font-family: Brains-bold, system-ui;
+}
+.second_text{
+  font-family: Brains-bold, system-ui;
+  font-size: 16px;
+}
 
-    }
-    .duo_text{
-      margin-top: 166px;
-    }
-  }
+@media screen and (max-width: 1200px) {
 
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .first_text{
-      font-size: 40px;
-    }
-    .second_text{
-      font-size: 16px;
-
-    }
-    .duo_text{
-      margin-top: 166px;
-    }
-  }
-  @media screen and (max-width: 820px) {
-    .first_text{
-      font-size: 18px;
-    }
-    .second_text{
-      font-size: 10px;
-
-    }
-    .duo_text{
-      margin-top: 25px;
-    }
-
-  }
-
-  .duo_text{
-    display: flex;
-    justify-content: space-between;
-    height: 53px;
-    align-items: center;
-  }
   .first_text{
+    font-size: 30px;
 
-    font-family: Brains-bold, system-ui;
   }
   .second_text{
 
-    font-family: Brains-bold, system-ui;
+    font-size: 15px;
   }
+
+
+}
+@media screen and (max-width: 880px) {
+
+  .first_text{
+    font-size: 25px;
+  }
+  .second_text{
+    font-size: 14px;
+  }
+
+
+}
+
+
 
  
   </style>

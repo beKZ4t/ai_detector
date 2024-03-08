@@ -37,108 +37,77 @@
   </script>
   
   <style scoped>
-  @media screen and (min-width: 1440px) {
-    .left {
-      width: 457px;
-      border-radius: 19px;
-      font-size: 28px;
-    }
-    .second{
-      font-size: 25px;
-      height: 150px;
-      width: 361px;
-      margin-left: 37px;
-
-    }
-    .first{
-      margin-top: 28px;
-      margin-left: 35px;
-      margin-bottom: 25px;
-    }
-    .deep-analysis{
-      height: 285px;
-      margin-top: 90px;
-    }
-
-  }
-
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .left{
-      width: 335px;
-      border-radius: 18px;
-      font-size: 22px;
-
-    }
-    .first{
-      margin-top: 21px;
-      margin-left: 29px;
-      margin-bottom: 26px;
-    }
-    .second{
-      font-size: 20px;
-      height: 105px;
-      width: 275px;
-      margin-left: 29px;
-
-    }
-    .deep-analysis{
-      height: 226px;
-      margin-top: 91px;
-    }
-  }
-  @media screen and (max-width: 820px) {
-    .left{
-      width: 195px;
-      border-radius: 11px;
-      font-size: 13px;
-
-    }
-    .second{
-      font-size: 12px;
-      width: 158px;
-      margin-left: 16px;
-    }
-    .first{
-      margin-top: 14px;
-      margin-left: 19px;
-      margin-bottom: 7px;
-    }
-    .deep-analysis{
-
-      height: 135px;
-      margin-top: 50px;
-    }
-  }
-
-  
   .main{
-
-    margin-right: auto;
-    margin-left: auto;
-    
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
 
-
+.first{
+  margin-bottom: 26px;
+}
   .second{
     font-family: Brains-regular, system-ui;
     transition: 0.8s;
+    font-size: 22px;
   }
 
   .deep-analysis{
     display: flex;
     justify-content: space-between;
+    margin:0 auto;
+    margin-top: 91px;
+    width: 90%;
   }
   .left{
+    padding: 21px 31px 45px 29px;
     background-color: #EFEFEF;
     font-family: Brains-bold, system-ui;
     transition: 0.8s;
+    width: 330px;
+    height: 190px;
+    border-radius: 18px;
+    font-size: 28px;
+
+
 
   }
   .left:hover{
     color: #FF0800;
     background-color: #FFFFFF;
     border:1px solid #FF0800;
+
+  }
+  @media screen and (max-width: 1200px) {
+  .left{
+    font-size: 22px;
+    width: 270px;
+    height: 150px;
+    padding: 18px 25px 30px 20px;
+  }
+    .second{
+      font-size: 18px;
+    }
+
+
+
+  }
+  @media screen and (max-width: 880px) {
+
+
+    .deep-analysis{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+      margin-top: 53px;
+    }
+    .left{
+      margin:10px
+    }
 
   }
 
