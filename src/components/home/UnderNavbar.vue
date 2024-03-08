@@ -32,111 +32,85 @@
   </script>
   
   <style scoped>
-  @media screen and (min-width: 1440px) {
-    .UnderNavbar{
-      display: flex;
-      margin-top: 115px;
-      width: 1460px;
-      height: 668px;
-    }
-    .first{
-      margin-top: 39px;
-      width: 620px;
-      height: 296px;
-      font-size: 65px;
-      margin-right: 17px;
-    }
-    img{
-      height:538px;
-      width:683px;
-    }
-    .second{
-      height: 128px;
-      width: 680px;
-      font-family: Brains-regular, system-ui;
-      font-size: 24px;
-      margin-top: 100px;
-
-    }
-
+  .under_left{
+    width: 80%;
   }
-
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .UnderNavbar{
-      display: flex;
-      margin-top: 115px;
-      width: 1088px;
-      height: 502px;
-
-    }
-    .first{
-      margin-top: 39px;
-      width: 558px;
-      height: 396px;
-      font-size: 56px;
-      margin-right: 22px;
-    }
-    img{
-      height:350px;
-      width:460px;
-    }
-    .second{
-      height: 128px;
-      width: 680px;
-      font-size: 22px;
-
-
-    }
-
-  }
-
-  @media screen and (max-width: 820px) {
-    .UnderNavbar{
-      margin-top: 28px;
-
-      height: 250px;
-    }
-    .first{
-      margin-top: 28px;
-      width: 201px;
-      height: 100px;
-      font-size: 20px;
-      margin-right: 10px;
-    }
-    img {
-      height: 150px;
-      width: 190px;
-    }
-    .second{
-      width: 303px;
-      font-size: 13px;
-      margin-top: 22px;
-
-    }
-
-  }
-
-
-  .second{
-
-    font-family: Brains-regular, system-ui;
-
-
-  }
-  .UnderNavbar{
-    //margin-top: 115px;
+  .main{
+    width: 80%;
     display: flex;
-    //height: 502px;
-    //width: 1088px;
+    align-items: center;
   }
   .first{
-    //margin-top: 39px;
-    //width: 558px;
-    //height: 296px;
-    //font-size: 56px;
-    font-family: Brains-medium, system-ui;
     color: #FF0800;
-    //margin-right: 17px;
+    font-family: "Brains-medium",system-ui;
+    font-size: 56px;
+    width: 62%;
+    margin-top: 115px;
+
+  }
+  .second{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 22px;
+    font-family: "Brains-regular", system-ui;
+    width: 77%;
+    line-height: 35px;
+    margin-top: 39px;
+  }
+  .UnderNavbar{
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+  }
+  .main_img{
+    max-width: 513px;
+    margin-top: 89px;
+
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .first{
+      font-size: 35px;
+      margin-top: 70px;
+      width: 56%;
+    }
+    .main_img{
+      max-width: 350px;
+      margin-top: 50px;
+
+    }
+    .second{
+
+      font-size: 17px;
+      font-family: "Brains-regular", system-ui;
+      width: 75%;
+      margin-top: 20px;
+      line-height: normal;
+    }
+
+
+
+  }
+  @media screen and (max-width: 880px) {
+    .first[data-v-b7941cbe] {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+    .main_img{
+      max-width: 200px;
+      margin-top: 50px;
+
+    }
+    .second{
+      font-size: 14px;
+      font-family: "Brains-regular", system-ui;
+      width: 68%;
+      margin-top: 20px;
+      line-height: normal;
+    }
+
+
   }
 
   </style>

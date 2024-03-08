@@ -29,123 +29,54 @@
   </script>
   
   <style scoped>
-  @media screen and (min-width: 1440px) {
-    .navbar {
-      margin: 0 auto;
-      width: 1468px;
-    }
-    .logo_img {
-      height: 120px;
-      width: 102px;
-    }
-    .right_side p {
-      font-size: 22px;
-      margin-left: 13px;
-    }
-    .right_side {
-      width: 190px;
-      height: 55px;
-      border-radius: 10px;
+.navbar{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.logo_img{
+  max-width: 68px;
+}
+.right_side{
+  width: 94px;
+  height: 24px;
+  padding: 16px 38px;
+  background-color: #E52D27;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: Brains-bold, system-ui;
+  border-radius: 10px;
+}
+.ims_icon{
+  height: 16px;
 
-    }
-    .ims_icon{
-      width:18px;
-    }
-  }
+}
 
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .navbar {
-      margin: 0 auto;
-      width: 1096px;
-    }
-    .logo_img {
-      height: 80px;
-      width: 68px;
 
-    }
-    .right_side {
-      width: 170px;
-      height: 53px;
-      border-radius: 10px;
+  @media screen and (max-width: 1200px) {
 
-    }
-    .right_side p {
-      font-size: 18px;
-      margin-left: 13px;
-    }
-    .ims_icon{
-      width:16px;
-    }
-    .navbar {
-      margin-top: 9px;
-      height: 80px;
 
-    }
-  }
 
-  @media screen and (max-width: 820px) {
-    .navbar {
-      margin: 0 auto;
-      width: 550px;
-    }
-    .logo_img {
-      height: 40px;
-      width: 34px;
-
-    }
-    .right_side {
-      width: 110px;
-      height: 33px;
-      border-radius: 7px;
-    }
-    .navbar {
-      margin-top: 9px;
-      height: 45px;
-    }
-    .right_side p {
-      font-size: 11px;
-      margin-left: 13px;
-    }
-    .ims_icon{
-      width:11px;
-    }
-  }
-
-  h1 {
-    color: black;
-  }
-
-  .right_side {
-    background-color: #E52D27;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 1ms ease-out 100ms;
-    margin-left: auto; /* Переместите `.right_side` вправо */
 
   }
-
-  .right_side p {
-    color: white;
-    font-family: Brains-bold, system-ui;
+  @media screen and (max-width: 880px) {
+  .right_side{
+    padding: 13px 18px;
+    font-size: 14px;
+    width: 73px;
   }
+   .ims_icon{
+     height: 14px;
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
+      }
+
 
   }
-
-  .navbar_right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo_img {
-    cursor: pointer;
-  }
-
 
   </style>

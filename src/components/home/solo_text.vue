@@ -22,35 +22,31 @@
   </script>
   
   <style scoped>
-  @media screen and (min-width: 1440px) {
-    .solo_text{
-      margin-top: 134px;
-      font-size: 18px;
-
-    }
-  }
-
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .solo_text{
-      margin-top: 134px;
-      font-size: 16px;
-
-    }
-  }
-  @media screen and (max-width: 820px) {
-    .solo_text{
-      margin-top: 20px;
-      font-size: 11px;
-
-    }
-  }
-  
-
   .solo_text{
-
+    width: 95%;
+    font-size: 16px;
     font-family: Brains-medium, system-ui;
     display: flex;
     justify-content: end;
+    margin-top: 134px;
+  }
+
+  @media screen and (max-width: 1200px) {
+  .solo_text{
+    font-size: 14px;
+    margin-top: 100px;
+  }
+
+
+
+  }
+  @media screen and (max-width: 880px) {
+    .solo_text{
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+
   }
  
   </style>

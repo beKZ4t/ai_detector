@@ -33,79 +33,47 @@
   </script>
   
   <style scoped>
-  @media screen and (min-width: 1440px) {
-    .discover{
-      height: 132px;
-      margin-top: 45px;
-    }
-    .left_discover{
-      font-size: 50px;
-      width: 570px;
-    }
-    .right_discover{
-      width: 710px;
-      font-size: 28px;
+ .discover{
+   width: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 auto;
+   margin-top: 39px;
+ }
+ .second{
+   color: #FF0000;
+ }
+ .left_discover{
+   font-size: 40px;
+   color: black;
+   font-family: Brains-bold, system-ui;
+   width: 69%;
+ }
+ .right_discover{
+   font-family: Brains-regular, system-ui;
+   font-size: 22px;
+   color: rgba(0, 0, 0, 0.7);
+   width: 49%;
+ }
+ @media screen and (max-width: 1200px) {
 
-    }
-  }
 
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .discover{
-      height: 128px;
-      margin-top: 35px;
 
-    }
-    .left_discover{
-      font-size: 40px;
-      width: 492px;
 
-    }
-    .right_discover{
-      width: 552px;
-      font-size: 22px;
+ }
+ @media screen and (max-width: 880px) {
+   .right_discover{
+     font-size: 14px;
+     width: 50%;
+   }
+   .left_discover{
+     font-size: 20px;
+     width: 50%;
+   }
 
-    }
-  }
-  @media screen and (max-width: 820px) {
-    .discover{
-      height: 50px;
-      margin-top: 28px;
 
-    }
-    .left_discover{
-      font-size: 20px;
-      width: 261px;
-
-    }
-    .right_discover{
-      width: 340px;
-      font-size: 13px;
-
-    }
-
-  }
-  
-
-  .discover{
-    display: flex;
-    justify-content: space-between;
-  }
-  .first{
-    color: #000000;
-    
-  }
-  .second{
-    color: #FF0000;
-  }
-  .left_discover{
-    font-family: Brains-medium, system-ui;
-
-  }
-  .right_discover{
-    color: #00000070;
-    font-family: Brains-regular, system-ui;
-
-  }
+ }
   
  
   </style>
