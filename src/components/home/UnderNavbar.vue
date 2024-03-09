@@ -32,11 +32,9 @@
   </script>
   
   <style scoped>
-  .under_left{
-    width: 80%;
-  }
+
   .main{
-    width: 80%;
+    padding: 0 6%;
     display: flex;
     align-items: center;
   }

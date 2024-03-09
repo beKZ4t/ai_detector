@@ -3,6 +3,14 @@
 
 
   <navbar-user-component></navbar-user-component>
+  <div class="block"></div>
+
+
+        <img src="@/assets/images/ava.png"
+
+
+
+
 </div>
       </template>
       
@@ -23,8 +31,18 @@
       
       <style scoped>
   .main{
-    width: 1074px;
+    width: 90%;
     margin: 0 auto;
+  }
+  .block{
+    margin-top: 70px;
+    max-width:30% ;
+    height: 560px;
+    background-color: #E52D27;
+    margin: 50px auto;
+  }
+  .in_block{
+
   }
 
       </style>

@@ -2,17 +2,22 @@
 
 
         <div class="container">
+          <div>
           <div class="item ">
             <p>Leverages the latest breakthrough in AI detection research.</p>
           </div>
+
           <div class="item ">
             <p>Unprescedented granular view and understanding of results.</p>
           </div>
+          </div>
+          <div>
           <div class="item ">
             <p>Color-coded highlights for most AI and Human sections of writing.</p>
           </div>
           <div class="item ">
             <p>Statistical analysis for exactly how each sentence affects AI probabilities.</p>
+          </div>
           </div>
         </div>
         <div class="end_text">© 2023-2024</div>
@@ -36,70 +41,14 @@
   </script>
   
   <style scoped>
-
-  @media screen and (min-width: 1440px) {
-    .container{
-      height: 345px;
-      margin-top: 48px;
-    }
-    .item {
-      font-size: 25px;
-      width: 715px;
-      height: 150px;
-      border-radius: 10px;
-    }
-    .item p {
-      margin-top: 32px;
-      margin-left: 24.78px;
-      height: 85px;
-      width: 626.68px;
-    }
-  }
-
-  @media screen and (max-width: 1440px) and (min-width: 821px) {
-    .container{
-      height: 333px;
-      margin-top: 44px;
-    }
-    .item {
-      width: 518px;
-      height: 150px;
-      font-size: 22px;
-      border-radius: 10px;
-    }
-    .item p {
-
-      margin-top: 34px;
-      margin-left: 26.78px;
-      height: 82px;
-      width: 461.68px;
-    }
-
-  }
-  @media screen and (max-width: 820px) {
-    .container{
-      height: 170px;
-      margin-top: 5px;
-    }
-    .item {
-      width: 305px;
-      height: 64px;
-      font-size: 10px;
-      border-radius: 5px;
-    }
-    .item p {
-      margin-left: 5px;
-      height: 65px;
-      width: 280px;
-    }
-
-  }
-
-
   .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 43px;
+    height: 333px;
+    align-content: space-around;
 
   }
   .item {
@@ -107,6 +56,9 @@
     box-shadow: 1px #00000050 ;
     font-family: Brains-regular, system-ui;
     transition: 0.8s;
+    padding: 34px 30px 34px 27px;
+    border-radius: 10px;
+    width: 518px;
   }
   .item:hover{
     color: #FFFFFF;
@@ -115,7 +67,9 @@
   }
 
   .item p{
-
+    font-size: 22px;
+    font-family: Brains-regular, system-ui;
+    color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
   }
@@ -129,6 +83,45 @@
     display: flex;
 
   }
-  
- 
+
+
+  @media screen and (max-width: 1200px) {
+    .container{
+      max-width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .item p{
+      font-size: 18px;
+    }
+    .item{
+      width: 426px;
+      padding: 34px 30px 34px 27px;
+
+    }
+
+    }
+
+
+
+  @media screen and (max-width: 880px) {
+    .item p{
+      font-size: 14px;
+    }
+    .item{
+      width: 212px;
+      padding: 10px 10px 10px 10px;
+
+    }
+    .container{
+
+    }
+
+
+
+  }
+
+
+
   </style>

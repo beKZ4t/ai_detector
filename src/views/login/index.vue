@@ -62,7 +62,7 @@ h1{
   justify-content: center;
 }
 .main{
-    width:1096px;
+   max-width: 90%;
     margin-right: auto;
     margin-left: auto;
     

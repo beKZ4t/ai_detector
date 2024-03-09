@@ -99,14 +99,22 @@
 
 
     .deep-analysis{
-      display: flex;
-      flex-direction: column;
       margin: 0 auto;
       align-items: center;
       margin-top: 53px;
     }
     .left{
-      margin:10px
+      margin: 10px;
+      width: 135px;
+      font-size: 14px;
+      height: 111px;
+      padding: 14px 20px 20px 15px;
+    }
+    .second{
+      font-size: 12px;
+    }
+    .first{
+      margin-bottom: 15px;
     }
 
   }

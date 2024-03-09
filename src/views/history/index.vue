@@ -78,7 +78,7 @@ export default {
 
 <style scoped>
 .main{
-  width: 1074px;
+  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
 

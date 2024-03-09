@@ -32,7 +32,7 @@
   
   <style scoped>
 .duo_text{
-  width: 90%;
+ padding: 0 10%;
   margin:0 auto;
   display: flex;
   justify-content: space-between;
@@ -68,6 +68,10 @@
   }
   .second_text{
     font-size: 14px;
+  }
+  .duo_text{
+   margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 

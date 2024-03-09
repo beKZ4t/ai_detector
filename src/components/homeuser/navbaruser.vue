@@ -1,6 +1,6 @@
 <template>
 
-        
+
         <div class="navbaruser">
             <div @click="this.$router.push('/homeuser')"><img class="logo_img" src="@/assets/images/logo.png"> </div>
             <div class="right">
@@ -20,6 +20,7 @@
 
         </div>
 
+
 </template>
 
 <script>
@@ -31,11 +32,13 @@ export default {
 </script>
 
 <style scoped>
+
 .navbaruser{
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
+
 
 }
 button{

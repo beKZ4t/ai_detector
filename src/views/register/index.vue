@@ -77,9 +77,8 @@
     justify-content: center;
   }
   .main{
-      width:1096px;
-      margin-right: auto;
-      margin-left: auto;
+      max-width: 90%;
+      margin: 0 auto;
       
     }
     .red_create{
