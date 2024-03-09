@@ -7,6 +7,7 @@ import Register from "@/views/register/index.vue";
 import Homeuser from "@/views/homeuser/index.vue";
 import Result from "@/views/result/index.vue"
 import History from "@/views/history/index.vue";
+import Payments from "@/views/payments/index.vue";
 
 
 
@@ -52,6 +53,12 @@ const routes = [
         path: '/history',
         name: '/history',
         component: History
+    },
+
+    {
+        path: '/payments',
+        name: '/payments',
+        component: Payments
     },
 
 

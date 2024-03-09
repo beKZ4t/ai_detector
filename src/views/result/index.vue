@@ -1,6 +1,7 @@
 <template>
     <div class="main">
         <navbardetec-component></navbardetec-component>
+      <div class="main_width">
         <div class="main_page">
             <div class="first">
                 Results of our <span class="red">inspection</span>
@@ -46,14 +47,18 @@
           <button type="button" @click="this.$router.go(-1)"><img class="img_right" height="15px" src="@/assets/images/left.png">Back</button>
         </div>
         <div class="right">
-          <span class="under_red"> PRO </span> <span class="second_span"> Download without plagiarism
-          <img class="last_icon" src="@/assets/images/password.png"></span>
+          <span v-if="!isProUser" @click="goToGetPro" class="under_red"> PRO </span>
+          <span class="second_span" :style="{
+           borderBottom: isProUser ? '2px solid #E52D27' : '2px solid #E52D27',
+            color: isProUser ? '#E52D27' : '#E52D27'}">   Download without plagiarism
+          <img v-if="!isProUser" @click="goToGetPro" class="last_icon" src="@/assets/images/password.png"></span>
 
         </div>
       </div>
 
 
       <div class="end_text">© 2023-2024</div>
+    </div>
     </div>
 </template>
 
@@ -67,6 +72,12 @@ export default {
         NavbardetecComponent, CircleProgress
 
     },
+  data(){
+      return{
+        isProUser:true
+
+      }
+  },
   mounted() {
     window.scrollTo(0, 0);
   }
@@ -79,10 +90,15 @@ export default {
   font-size: 18px;
   font-family: Brains-bold, system-ui;
   color: #00000050;
+  cursor: pointer;
 
 
 
 
+}
+.main_width{
+  width: 90%;
+  margin: 0 auto;
 }
 .second_span{
   border-bottom: 2px solid #00000050;
@@ -111,7 +127,6 @@ button{
 }
 .under{
   display: flex;
-  width: 1048.45px;
   height: 53px;
   justify-content: space-between;
   margin-top: 65px;
@@ -172,7 +187,7 @@ button{
 }
 .procents{
   display: flex;
-  width: 858px;
+  width: 80%;
   height: 256px;
   align-items: center;
   justify-content: space-between;
@@ -181,7 +196,7 @@ button{
 
 }
 .main{
-    width: 1074px;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     

@@ -11,7 +11,7 @@
 
                   <div class="item" @click="this.$router.push('/profile')" :style="{ borderBottom: $route.path === '/profile' ? '2px solid #E52D27' : '' }">Profile</div>
 
-                    <button type="button">Get PRO</button>
+                  <button v-if="!isProUser" type="button" @click="goToGetPro">Get PRO</button>
 
                 </div>
 
@@ -29,8 +29,14 @@
 
 export default {
     name: "NavbardetecComponent",
+  data() {
+    return {
+      isProUser: true // По умолчанию предположим, что пользователь не имеет PRO-подписки
+    };
+  },
 
 }
+
 </script>
 
 <style scoped>

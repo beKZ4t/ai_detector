@@ -54,7 +54,7 @@ mounted() {
 
 
 .main{
-    width: 1074px;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     
@@ -107,6 +107,8 @@ button img{
     margin-left: 10px;
 }
 textarea{
+    padding-left: 26px;
+    padding-top: 34px;
     width: 509px;
     height: 370px;
     border-radius: 10px;
@@ -118,10 +120,7 @@ textarea{
 textarea:focus{
   outline: 1px solid #00000060 ;
 }
-::-webkit-input-placeholder { 
-      padding-top: 26px; 
-      padding-left: 34px;
-    }
+
 .check{
     width: 509px;
     height: 488px;
@@ -135,6 +134,8 @@ textarea:focus{
 }
 .main_page{
     display: flex;
+    width: 80%;
+    margin: 0 auto;
 }
 .red_first{
     color: #E52D27;
@@ -145,7 +146,7 @@ textarea:focus{
 
 }
 .main_text{
-    width: 508px;
+    width: 60%;
     height: 500px;
     display: flex;
     flex-direction: column;

@@ -46,9 +46,8 @@
   <style scoped>
   
   .main{
-    width:1074px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 90%;
+    margin: 0 auto;
     
   }
  
