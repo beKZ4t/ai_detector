@@ -19,7 +19,7 @@
         <div class="space"></div>
         <img src="@/assets/images/right%20arrow%205.png" class="right_arrow">
       </div>
-      <div class="item">
+      <div @click="this.$router.push('/payments')" class="item">
         <img src="@/assets/images/payment.png" class="image_1">
         <p>Payments</p>
         <div class="space"></div>
@@ -63,7 +63,7 @@
         margin-top: 131px;
         text-align: center;
         font-family: Inter-regular, system-ui;
-        font-size: 18px;
+        font-size: 22px;
       }
       .under_block{
         margin-top: 40px;
@@ -83,7 +83,7 @@
   }
 
   .block{
-    max-width: 390px;
+    max-width: 450px;
     margin: 0 auto;
     height: 559px;
 
@@ -95,21 +95,22 @@
     height: 42px;
     margin: 0 auto;
     margin-bottom: 24px;
+    cursor: pointer;
   }
   .item p{
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     font-family: Brains-regular,system-ui;
     margin-left: 16px;
   }
   .image_1{
     padding: 11px;
     background-color: #E52D27;
-    height: 20px;
+    height: 30px;
     border-radius: 16px;
   }
   .ava_image{
-    height: 82px;
+    height: 120px;
     margin-top: 70px;
   }
 .in_block{
@@ -121,13 +122,13 @@
 }
 .text_in_block p{
  color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Brains-medium, system-ui;
 }
 span{
   color: white;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Brains-regular,system-ui;
 }
       </style>
