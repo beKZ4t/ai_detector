@@ -15,7 +15,7 @@ export default {
 body, html {
   margin: 0;
   padding: 0;
-  
+  min-width: 800px;
 }
 p {
   margin: 0;

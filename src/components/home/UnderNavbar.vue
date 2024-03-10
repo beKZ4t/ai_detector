@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="UnderNavbar">
-          <div class="under_left">
+          <div class="under-left">
             <div class="first">
               More than an AI detector Preserve what's human.
             </div>
@@ -9,7 +9,9 @@
               We bring transparency to humans navigating a world filled with AI content. CheckGPT is the gold standard in AI detection, trained to detect ChatGPT, GPT4.
             </div>
           </div>
-          <img class="main_img" src="@/assets/images/main_img.png">
+         <div class="under-right">
+           <img class="main_img" src="@/assets/images/main_img.png">
+         </div>
         </div>
     </div>
 
@@ -33,18 +35,26 @@
   
   <style scoped>
 
-  .main{
-    padding: 0 6%;
-    display: flex;
-    align-items: center;
-  }
+.under-left {
+  flex: 1.5;
+}
+.under-right {
+  flex: 1;
+}
+.main_img{
+  width: 100%;
+}
+.main{
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+}
   .first{
     color: #FF0800;
     font-family: "Brains-medium",system-ui;
     font-size: 56px;
     width: 62%;
     margin-top: 115px;
-
   }
   .second{
     color: rgba(0, 0, 0, 0.7);
@@ -57,16 +67,7 @@
   .UnderNavbar{
     display: flex;
     align-items: center;
-    padding: 0 5%;
-
   }
-  .main_img{
-    max-width: 513px;
-    margin-top: 89px;
-
-  }
-
-
   @media screen and (max-width: 1200px) {
     .first{
       font-size: 35px;
@@ -91,13 +92,11 @@
 
   }
   @media screen and (max-width: 880px) {
-    .first[data-v-b7941cbe] {
+    .first  {
       font-size: 20px;
       margin-top: 50px;
     }
     .main_img{
-     display: none;
-
     }
     .second{
       font-size: 14px;
@@ -106,8 +105,5 @@
       margin-top: 20px;
       line-height: normal;
     }
-
-
   }
-
   </style>

@@ -7,14 +7,7 @@
         <deepanalysis-component></deepanalysis-component>
         <duo-text-component></duo-text-component>
         <container-component></container-component>
-      
-
-
     </div>
-
-
-
-
 </template>
   
 

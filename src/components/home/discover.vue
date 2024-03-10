@@ -40,7 +40,6 @@
    justify-content: space-between;
    margin: 0 auto;
    margin-top: 39px;
-   padding: 0 10%;
  }
  .second{
    color: #FF0000;

@@ -1,32 +1,23 @@
 <template>
-
-
-        <div class="container">
-          <div class="item ">
-            <p>Leverages the latest breakthrough in AI detection research.</p>
-          </div>
-
-          <div class="item ">
-            <p>Unprescedented granular view and understanding of results.</p>
-          </div>
-
-
-          <div class="item ">
-            <p>Color-coded highlights for most AI and Human sections of writing.</p>
-          </div>
-          <div class="item ">
-            <p>Statistical analysis for exactly how each sentence affects AI probabilities.</p>
-          </div>
-
+    <div class="container">
+      <div class="line-container">
+        <div class="item left">
+          <p>Leverages the latest breakthrough in AI detection research.</p>
         </div>
-        <div class="end_text">© 2023-2024</div>
-
-
-
-
-
-
-
+        <div class="item right">
+          <p>Unprescedented granular view and understanding of results.</p>
+        </div>
+      </div>
+      <div class="line-container">
+        <div class="item left">
+          <p>Color-coded highlights for most AI and Human sections of writing.</p>
+        </div>
+        <div class="item right">
+          <p>Statistical analysis for exactly how each sentence affects AI probabilities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="end_text">© 2023-2024</div>
 </template>
   
 
@@ -41,22 +32,33 @@
   
   <style scoped>
   .container{
-    display: grid;
-    gap: 10px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 43px;
-    height: 333px;
     align-content: space-around;
-
+  }
+  .left {
+    margin-right: 13px;
+  }
+  .right {
+    margin-left: 13px;
+  }
+  .line-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
   }
   .item {
+    flex: 1;
     border: 1px solid #00000070;
     box-shadow: 1px #00000050 ;
     font-family: Brains-regular, system-ui;
     transition: 0.8s;
     padding: 34px 30px 34px 27px;
     border-radius: 10px;
-    width: 518px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .item:hover{
     color: #FFFFFF;
@@ -85,7 +87,6 @@
 
   @media screen and (max-width: 1200px) {
     .container{
-      max-width: 90%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -93,24 +94,30 @@
     .item p{
       font-size: 18px;
     }
-    .item{
-      width: 426px;
+    .item {
       padding: 34px 30px 34px 27px;
 
     }
 
-    }
+}
 
 
 
   @media screen and (max-width: 880px) {
+    .line-container {
+      margin-bottom: 18px;
+    }
+    .left {
+      margin-right: 6px;
+    }
+    .right {
+      margin-left: 6px;
+    }
     .item p{
       font-size: 14px;
     }
     .item{
-      width: 212px;
       padding: 10px 10px 10px 10px;
-
     }
     .container{
 

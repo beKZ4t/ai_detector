@@ -8,7 +8,6 @@
       <div class="second">
         All your checks are stored here, and the text that you uploaded can be downloaded as a file
       </div>
-
     </div>
     <table>
       <tr>
@@ -173,4 +172,10 @@ td {
   height: 20px;
   margin-left: 10px;
 }
+@media screen and (max-width: 880px) {
+  .main_page {
+    display: block;
+  }
+}
+
 </style>
