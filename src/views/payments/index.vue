@@ -23,9 +23,8 @@
             <input autocomplete="off" class="exp" id="year" maxlength="2" pattern="[0-9]*" inputmode="numerical" placeholder="YY" type="text" data-pattern-validate />
           </div>
         </div>
-        <div class="space"></div>
         <div class="right_side">
-          <p class="name_card">CVV    <span>*</span>  </p>
+          <p class="name_card">CVV<span>*</span></p>
           <input type="number" class="last_input" placeholder="CVV">
         </div>
 
@@ -54,8 +53,8 @@ export default {
 .button{
   margin: 0 auto;
   background-color: #E52D27;
-  padding: 16px 130px;
   font-size: 22px;
+  padding: 10px;
   color: #FFFFFF;
   font-family: Brains-regular, system-ui;
   margin-top: 43px;
@@ -63,14 +62,19 @@ export default {
   border-radius: 10px;
   cursor: pointer;
 }
-.space{
-  flex: auto;
+.left_side {
+  flex: 1;
+  margin-right: 10px;
+}
+.right_side {
+  flex: 1;
+  margin-left: 10px;
 }
 .exp-wrapper {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
-  width: 150px;
+  width: 100%;
   justify-content: space-around;
   height: 52px;
   line-height: 36px;
@@ -98,12 +102,15 @@ input.exp {
   font-size: 15px;
 }
 .last_input{
-  width: 50%;
+  width: 100%;
   padding-left: 21px;
   padding-bottom: 17px;
   padding-top: 18px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .end_input{
   display: flex;
@@ -115,9 +122,9 @@ input.exp {
   margin: 0 auto;
 }
 .block{
-  width: 30%;
+  width: 500px;
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 80px;
 
 }
 .header{
@@ -128,6 +135,7 @@ input.exp {
 .under_header{
   text-align: center;
   font-size: 16px;
+  margin-top: 10px;
   font-family: Brains-regular, system-ui;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 27px;
