@@ -2,7 +2,6 @@
 
 
         <div class="container">
-          <div>
           <div class="item ">
             <p>Leverages the latest breakthrough in AI detection research.</p>
           </div>
@@ -10,15 +9,15 @@
           <div class="item ">
             <p>Unprescedented granular view and understanding of results.</p>
           </div>
-          </div>
-          <div>
+
+
           <div class="item ">
             <p>Color-coded highlights for most AI and Human sections of writing.</p>
           </div>
           <div class="item ">
             <p>Statistical analysis for exactly how each sentence affects AI probabilities.</p>
           </div>
-          </div>
+
         </div>
         <div class="end_text">© 2023-2024</div>
 
@@ -42,9 +41,8 @@
   
   <style scoped>
   .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    gap: 10px;
     margin: 0 auto;
     margin-top: 43px;
     height: 333px;

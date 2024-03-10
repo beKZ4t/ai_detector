@@ -96,8 +96,7 @@
       margin-top: 50px;
     }
     .main_img{
-      max-width: 200px;
-      margin-top: 50px;
+     display: none;
 
     }
     .second{
