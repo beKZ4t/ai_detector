@@ -176,6 +176,31 @@ td {
   .main_page {
     display: block;
   }
+  .first{
+    font-size: 25px;
+    height: 60px;
+
+  }
+  .second{
+    font-size: 18px;
+    height: 40px;
+  }
+  .main_page{
+    margin-top: 25px;
+  }
+  th{
+    font-size: 18px;
+  }
+  .date-text{
+    font-size: 18px;
+  }
+  .open-button>p {
+    font-size: 18px;
+  }
+  .download-button{
+    font-size: 18px;
+  }
+
 }
 
 </style>

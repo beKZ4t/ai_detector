@@ -50,8 +50,8 @@
   }
   .item {
     flex: 1;
-    border: 1px solid #00000070;
-    box-shadow: 1px #00000050 ;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    box-shadow: 1px rgba(0, 0, 0, 0.5);
     font-family: Brains-regular, system-ui;
     transition: 0.8s;
     padding: 34px 30px 34px 27px;

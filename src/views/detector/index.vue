@@ -172,4 +172,32 @@ textarea:focus{
     display: block;
   }
 }
+@media screen and (max-width: 880px) {
+  .first{
+    font-size: 22px;
+  }
+  .main_text{
+    margin-top: 20px;
+  }
+  .second{
+    font-size: 16px;
+  }
+  .third{
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .check{
+    margin-top: 50px;
+  }
+  .head_check{
+    font-size: 16px;
+  }
+  textarea{
+    font-size: 18px;
+  }
+  button{
+    font-size: 16px;
+  }
+
+}
 </style>
