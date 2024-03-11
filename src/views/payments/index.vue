@@ -111,6 +111,7 @@ input.exp {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline: none;
 }
 .end_input{
   display: flex;
