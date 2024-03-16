@@ -62,7 +62,7 @@
       },
         methods: {
           logout() {
-            localStorage.removeItem("auth-token");
+            localStorage.removeItem("auth_token");
             this.$router.push("/");
           }
         }

@@ -47,7 +47,7 @@ export default {
           password: this.password
         }
       }).then((response) => {
-        localStorage.setItem("auth-token", response.data.token);
+        localStorage.setItem("auth_token", response.data.token);
         this.$router.push('/');
       }).catch(() => {
         alert("Incorrect email or password!");
