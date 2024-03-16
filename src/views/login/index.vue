@@ -26,7 +26,6 @@
 
 <script>
 
-
 import api from "@/service/api.js";
 
 export default {
@@ -37,14 +36,25 @@ export default {
       password: ""
     }
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     login() {
-      this.$router.push("/homeuser");
+      api.auth.login({
+        data: {
+          email: this.email,
+          password: this.password
+        }
+      }).then((response) => {
+        localStorage.setItem("auth-token", response.data.token);
+        this.$router.push('/');
+      }).catch(() => {
+        alert("Incorrect email or password!");
+        this.password = "";
+      })
     }
-},
-mounted() {
-  window.scrollTo(0, 0);
-}
+  },
 }
 </script>
 
@@ -143,8 +153,10 @@ h1{
   }
 
   .input-container {
+    align-items: center;
     padding: 9px 19px;
     background: white;
+    display: flex;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin-bottom: 14px;
@@ -154,14 +166,15 @@ h1{
     display: inline-block;
     vertical-align: middle;
     width: 24px;
+    height: 24px;
   }
 
   input {
     padding-top: 9px;
     padding-bottom: 9px;
     margin-left: 15px;
+    flex: 1;
     display: inline-block;
-    vertical-align: middle;
     background: white;
     border: none;
     outline: none;

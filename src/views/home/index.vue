@@ -1,6 +1,7 @@
 <template>
-    <div class="main">
-        <navbar-component></navbar-component>
+    <div class="main" v-if="!isLoading">
+        <navbar-user-component v-if="isLogin"></navbar-user-component>
+        <navbar-component v-else-if="isLogin === false" ></navbar-component>
         <under-navbar-component></under-navbar-component>
         <solo-text-component></solo-text-component>
         <discover-component></discover-component>
@@ -19,6 +20,7 @@
   import DeepanalysisComponent from "@/components/home/deepanalysis.vue";
   import DuoTextComponent from "@/components/home/duo_text.vue";
   import ContainerComponent from "@/components/home/container.vue";
+  import NavbarUserComponent from "@/components/homeuser/navbaruser.vue";
   
   
 
@@ -26,17 +28,30 @@
   export default {
     name: "index",
     components: {
+      NavbarUserComponent,
       NavbarComponent,UnderNavbarComponent,SoloTextComponent, DiscoverComponent, DeepanalysisComponent, DuoTextComponent, ContainerComponent 
     },
-
-  mounted() {
-    window.scrollTo(0, 0);
+    data() {
+      return {
+        isLogin: false,
+        isLoading: true
+      }
+    },
+    mounted() {
+      window.scrollTo(0, 0);
+      this.checkLogin();
+    },
+    methods: {
+      checkLogin() {
+        var token = localStorage.getItem("auth-token");
+        this.isLogin = token != null;
+        this.isLoading = false;
+      }
+    }
   }
-
-  }
-  </script>
+</script>
   
-  <style scoped>
+<style scoped>
 .main {
   max-width: 90%;
   margin: 0 auto;

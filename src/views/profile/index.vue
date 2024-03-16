@@ -37,6 +37,12 @@
         <div class="space"></div>
         <img src="@/assets/images/right%20arrow%205.png" class="right_arrow">
       </div>
+      <div class="item" @click="logout">
+        <img src="@/assets/images/setting%202.png" class="image_1">
+        <p>Logout</p>
+        <div class="space"></div>
+        <img src="@/assets/images/right%20arrow%205.png" class="right_arrow">
+      </div>
     </div>
 </div>
   <p class="end_text">© 2023-2024</p>
@@ -53,7 +59,13 @@
         components: {NavbarUserComponent},
       mounted() {
         window.scrollTo(0, 0);
-      }
+      },
+        methods: {
+          logout() {
+            localStorage.removeItem("auth-token");
+            this.$router.push("/");
+          }
+        }
       }
 
       </script>
