@@ -19,7 +19,7 @@
                   <div class="upload">File <div class="img"><img height="20px" src="@/assets/images/staple.png"> </div> </div>
               </div>
               <div class="check_container">
-                  <textarea placeholder="Enter or paste your text..."></textarea>
+                  <textarea placeholder="Enter or paste your text..." v-model="text"></textarea>
               </div>
             <div style="display: flex">
               <div style="flex: auto"></div>
@@ -34,17 +34,30 @@
 
 <script>
 import NavbardetecComponent from "@/components/detector/navbardetec.vue";
+import api from "@/service/api.js";
 
 export default {
-    name: "index",
-    components: {
-        NavbardetecComponent
+  name: "index",
+  components: {NavbardetecComponent},
+  data() {
+    return {
+      text: ""
+    }
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+  methods: {
+    sendToDetect() {
+      api.detect.detect({
+        data: {
+          content: this.text
+        }
+      }).then((response) => {
 
-
-},
-mounted() {
-  window.scrollTo(0, 0);
-}
+      })
+    }
+  }
 }
 </script>
 

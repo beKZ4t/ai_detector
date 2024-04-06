@@ -15,5 +15,10 @@ export  default  {
             return response;
         })
     },
+    getHistory() {
+        return request('get', 'detect/history').then((response) => {
+            return response;
+        })
+    },
 
 }

@@ -43,7 +43,7 @@
     },
     methods: {
       checkLogin() {
-        var token = localStorage.getItem("auth-token");
+        var token = localStorage.getItem("auth_token");
         this.isLogin = token != null;
         this.isLoading = false;
       }

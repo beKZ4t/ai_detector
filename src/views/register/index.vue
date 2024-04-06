@@ -10,19 +10,12 @@
             <img class="input-icon" src="@/assets/images/password.png">
             <input type="text" placeholder="Username">
           </div>
-
-
-
           <div class="email">E-mail <div class="red">*</div></div>
-
           <div class="input-container">
             <img class="input-icon" src="@/assets/images/email.png">
             <input type="email" placeholder="E-mail">
           </div>
-
-
           <div class="password">Password <div class="red">*</div> </div>
-
           <div class="input-container">
             <img class="input-icon" src="@/assets/images/password.png">
             <input type="password" placeholder="Password">
