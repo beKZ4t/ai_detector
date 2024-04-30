@@ -17,7 +17,7 @@ export default {
   name: "NavbarUserComponent",
   data() {
     return {
-      isProUser: true // По умолчанию предположим, что пользователь не имеет PRO-подписки
+      isProUser: false
     };
   },
   methods: {
@@ -34,7 +34,6 @@ export default {
       this.$router.push('/profile');
     },
     goToGetPro() {
-      // Редирект на страницу покупки PRO-подписки
     }
   }
 };

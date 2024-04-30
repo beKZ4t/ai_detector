@@ -54,7 +54,7 @@ export default {
           content: this.text
         }
       }).then((response) => {
-
+          $router.push(result)
       })
     }
   }
@@ -148,6 +148,7 @@ textarea{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  resize: none;
 }
 textarea:focus{
   outline: 1px solid #00000060 ;
