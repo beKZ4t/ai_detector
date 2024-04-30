@@ -38,7 +38,7 @@
       </tr><tr>
         <td><div class="number-container"><p>3</p></div></td>
         <td><p class="date-text" style="text-align: start">24.02.2024, 19:37</p></td>
-        <td><percent-component :percent="10"/></td>
+        <td><percent-component :percent="40"/></td>
         <td><percent-component :percent="75"/></td>
         <td><percent-component :percent="39"/></td>
         <td><p class="download-button">Download</p></td>

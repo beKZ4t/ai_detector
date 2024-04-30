@@ -8,19 +8,19 @@
           <div class="user_name">Username <div class="red">*</div></div>
           <div class="input-container">
             <img class="input-icon" src="@/assets/images/password.png">
-            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Username" v-model="username">
           </div>
           <div class="email">E-mail <div class="red">*</div></div>
           <div class="input-container">
             <img class="input-icon" src="@/assets/images/email.png">
-            <input type="email" placeholder="E-mail">
+            <input type="email" placeholder="E-mail" v-model="email">
           </div>
           <div class="password">Password <div class="red">*</div> </div>
           <div class="input-container">
             <img class="input-icon" src="@/assets/images/password.png">
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" v-model="password">
           </div>
-          <button type="button" @click="this.$router.push('/homeuser')">Login</button>
+          <button type="button" @click="register">Register</button>
           <div class="create">Already have an account? <div @click="this.$router.push('/login')" class="red_create">Login</div></div>
           <div class="end_text">© 2023-2024</div>
         </div> 
@@ -29,14 +29,43 @@
   </template>
   
   <script>
-  
-  
+  import api from "@/service/api.js";
+
   export default {
-    name: "index",
-  mounted() {
-    window.scrollTo(0, 0);
-  }
-  }
+    name: "Registration",
+    data() {
+      return {
+        username: "",
+        email: "",
+        password: ""
+      };
+    },
+    mounted() {
+      window.scrollTo(0, 0);
+    },
+    methods: {
+      register() {
+        api.auth.register({
+          data: {
+            username: this.username,
+            email: this.email,
+            password: this.password
+          }
+        })
+            .then((response) => {
+              localStorage.setItem("auth_token", response.data.token);
+              this.$router.push('/');
+            })
+            .catch(() => {
+              alert("Registration failed. Please try again.");
+              this.password = "";
+              this.email="";
+            });
+      }
+    }
+  };
+
+
 
   </script>
   

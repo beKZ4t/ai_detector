@@ -54,7 +54,8 @@ export default {
           content: this.text
         }
       }).then((response) => {
-          $router.push(result)
+        localStorage.setItem("result", response.data);
+          $router.push('/result')
       })
     }
   }
